@@ -100,7 +100,7 @@ def visualizeCompletedness(df, figsize=(12, 7), palette="flare_r", save_path=Non
         raise ValueError(f"Input DataFrame must contain the columns: {required_columns}")
 
     compltd_plot = plt.figure(figsize=figsize)
-    ax = sns.barplot(data=df, x="Column", y="Missingness_Percentage_(%)", palette=palette)
+    ax = sns.barplot(data=df, x="Column", y="Missingness_Percentage_(%)", hue="Column", palette=palette, legend=False)
 
     plt.title("Percentage of Missing Values by Attribute", fontsize=14, fontweight="bold", loc="left")
     plt.ylabel("Percentage (%)")

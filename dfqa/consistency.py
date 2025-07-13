@@ -101,7 +101,7 @@ def visualizeConsistency(df, figsize=(14,8), palette="flare_r"):
     """
 
     con_plot = plt.figure(figsize=figsize)
-    ax = sns.barplot(data=df, x="Column", y="Number_Data_Type", palette=palette)
+    ax = sns.barplot(data=df, x="Column", y="Number_Data_Type", hue="Column", palette=palette, legend=False)
     plt.title("Data Type Consistency Across Columns", fontsize=16, fontweight="bold", loc="left")
     plt.xlabel(" ")
     plt.xticks(rotation=-90, ha="right")

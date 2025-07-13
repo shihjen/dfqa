@@ -108,7 +108,7 @@ def visualizeUniqueness(df, figsize=(14,12)):
 
     unq_plot = plt.figure(figsize=figsize)
     colors = ["#E6E6FA" if x < 100 else "#000080" for x in df["Percentage_of_Total_Rows_(%)"]]
-    ax = sns.barplot(data=df, x="Column", y="Percentage_of_Total_Rows_(%)",palette=colors)
+    ax = sns.barplot(data=df, x="Column", y="Percentage_of_Total_Rows_(%)", hue="Column", palette=colors, legend=False)
     plt.title("Percentage of Unique Values by Column", fontsize=16, fontweight="bold", loc="left")
     plt.xlabel(" ")
     plt.ylabel("Percentage (%)", fontsize=12)
