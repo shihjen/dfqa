@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: dfqa
-Version: 0.1.8
+Version: 0.1.9
 Summary: A Python library for assessing the data quality in pandas DataFrames.
 Home-page: 
 Author: Tan Shih Jen

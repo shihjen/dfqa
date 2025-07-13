@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="dfqa",
-    version="0.1.8",
+    version="0.1.9",
     description="A Python library for assessing the data quality in pandas DataFrames.",
     author="Tan Shih Jen",      
     license="MIT",
