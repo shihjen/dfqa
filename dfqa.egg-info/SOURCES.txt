@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dfqa/__init__.py
+dfqa/completedness.py
+dfqa/consistency.py
+dfqa/metadata.py
+dfqa/pretty.py
+dfqa/uniqueness.py
+dfqa.egg-info/PKG-INFO
+dfqa.egg-info/SOURCES.txt
+dfqa.egg-info/dependency_links.txt
+dfqa.egg-info/requires.txt
+dfqa.egg-info/top_level.txt
+tests/test_import.py
