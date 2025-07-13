@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dfqa"
-version = "0.1.6"
+version = "0.1.7"
 description = "A Python library for assessing the data quality in pandas DataFrames."
 authors = [
     { name = "Tan Shih Jen" }
@@ -27,6 +27,9 @@ classifiers = [
 ]
 urls = { "Homepage" = "https://github.com/shihjen/dfqa" }
 
+
+[tool.setuptools.package-data]
+"dfqa.reports" = ["report_template.docx"]
 
 [tool.setuptools.packages.find]
 where = ["."]
