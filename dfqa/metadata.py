@@ -60,7 +60,7 @@ def getMetadata(file_path):
     metadata["last_modified"] = last_modified.strftime("%Y-%m-%d %H:%M:%S")
 
     if extension.lower() == ".xlsx":
-        wb = load_workbook(file_name=file_path, read_only=True)
+        wb = load_workbook(filename=file_path, read_only=True)
         props = wb.properties
         metadata["title"] = props.title
         metadata["subject"] = props.subject
