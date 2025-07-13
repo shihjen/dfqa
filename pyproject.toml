@@ -25,7 +25,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"
 ]
-urls = { "Homepage" = "" }
+urls = { "Homepage" = "https://github.com/shihjen/dfqa" }
 
 
 [tool.setuptools.packages.find]

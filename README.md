@@ -3,7 +3,6 @@
 [![Build Status](https://img.shields.io/github/actions/workflow/status/shihjen/dfqa/python-package.yml?branch=main)](https://github.com/shihjen/dfqa/actions)
 [![License](https://img.shields.io/github/license/shihjen/dfqa)](https://github.com/shihjen/dfqa/blob/main/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/shihjen/dfqa)](https://github.com/shihjen/dfqa/commits/main)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/shihjen/dfqa/python-package.yml?branch=main)](https://github.com/shihjen/dfqa/actions)
 
 **dfqa** is a Python library for assessing data quality in pandas DataFrames.  
 It provides a suite of tools to evaluate completeness, consistency, uniqueness, and generate visual summaries of data quality issues — making it easier to identify and resolve problems before analysis or modeling.
