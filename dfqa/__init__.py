@@ -6,4 +6,4 @@ from .metadata import getMetadata
 
 __all__ = ["checkCompletedness", "visualizeCompletedness", "checkUniqueness", "visualizeUniqueness", "checkConsistency", "visualizeConsistency", "verifyConsistency", "ppdf", "getMetadata"]
 
-__version__ = "0.1.5"
+__version__ = "0.1.6"

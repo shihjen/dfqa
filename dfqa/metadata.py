@@ -66,7 +66,7 @@ def getMetadata(file_path):
         metadata["subject"] = props.subject
         metadata["creator"] = props.creator
         metadata["created"] = props.created.strftime("%Y-%m-%d %H:%M:%S")
-        metadata["modified"] = props.modified.strfyime("%Y-%m-%d %H:%M:%S")
+        metadata["modified"] = props.modified.strftime("%Y-%m-%d %H:%M:%S")
         metadata["category"] = props.category
         df = pd.read_excel(file_path, engine="openpyxl")
         metadata["nrows"] = df.shape[0]
