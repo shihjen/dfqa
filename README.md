@@ -1,0 +1,76 @@
+# dfqa
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/shihjen/dfqa/python-package.yml?branch=main)](https://github.com/shihjen/dfqa/actions)
+[![License](https://img.shields.io/github/license/shihjen/dfqa)](https://github.com/shihjen/dfqa/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/shihjen/dfqa)](https://github.com/shihjen/dfqa/commits/main)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/shihjen/dfqa/python-package.yml?branch=main)](https://github.com/shihjen/dfqa/actions)
+
+**dfqa** is a Python library for assessing data quality in pandas DataFrames.  
+It provides a suite of tools to evaluate completeness, consistency, uniqueness, and generate visual summaries of data quality issues — making it easier to identify and resolve problems before analysis or modeling.
+
+---
+
+## 🚀 Features
+
+- ✅ Check missing values and completeness
+- 🔄 Detect inconsistent data types or formats
+- 🔍 Identify unique values and potential primary keys
+- 📊 Generate intuitive visualizations for each check
+- 📂 Supports both CSV and Excel file inputs
+
+---
+
+## 📦 Installation
+
+You can install `dfqa` using pip:
+
+```bash
+pip install dfqa
+```
+
+Or clone the repository and install manually:
+
+```bash
+git clone https://github.com/shihjen/dfqa.git
+cd dfqa
+pip install .
+```
+
+## 🧪 Usage
+
+```python
+import pandas as pd
+from dfqa import (
+    checkCompletedness, visualizeCompletedness,
+    checkConsistency, visualizeConsistency,
+    checkUniqueness, visualizeUniqueness,
+    getMetadata
+)
+
+# Load data
+df = pd.read_csv("your_data.csv")
+
+# Completeness
+summary = checkCompletedness(df)
+fig = visualizeCompletedness(summary)
+fig.show()
+
+# Consistency
+consistency = checkConsistency(df)
+fig = visualizeConsistency(consistency)
+fig.show()
+
+# Uniqueness
+unique = checkUniqueness(df)
+fig = visualizeUniqueness(unique)
+fig.show()
+
+# File Metadata
+meta = getMetadata("your_data.csv")
+print(meta)
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
+See the LICENSE file for details.
