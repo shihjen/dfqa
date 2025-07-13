@@ -37,12 +37,12 @@ def ppdf(df, table_title=None):
     fig = go.Figure(data = [go.Table(
         header = dict(values = list(modified_col),
                       fill_color = "navy",
-                      aligh = "left",
+                      align = "left",
                       font = dict(size = 14, color = "white"),
                       height = 40),
         cells = dict(values = [df[col] for col in df.columns],
                      fill_color = "lavender",
-                     aligh = "left",
+                     align = "left",
                      font = dict(size = 14),
                      height = 30,
                      format = [{"text-wrap": "wrap"}] * len(df.columns)))
